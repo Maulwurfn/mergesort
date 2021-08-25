@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace mergesort
 {
@@ -50,13 +47,13 @@ namespace mergesort
                         right.Remove(right.First());
                     }
                 }
-                else if (left.Count > 0)
+                else if (left.Any())
                 {
                     // right side is empty dump all
                     result.Add(left.First());
                     left.Remove(left.First());
                 }
-                else if (right.Count > 0)
+                else if (right.Any())
                 {
                     // left side is empty dump all
                     result.Add(right.First());
